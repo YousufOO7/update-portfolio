@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Banner = () => {
     return (
         <div data-scroll data-scroll-section data-scroll-speed="-.3" className="w-full pt-1 h-screen bg-[#F1F1F1]">
-            <div className="mt-28 px-20">
+            <div className="mt-28 px-5 md:px-20">
                 {["I Create", "Responsive", "Website"].map((item, idx) => {
                     return <div key={idx}>
                         <div className="w-fit flex items-center overflow-hidden">
@@ -20,8 +20,8 @@ const Banner = () => {
                 })}
             </div>
 
-            <div className="border-t-[1px] border-zinc-300 mt-20">
-                <div className="flex justify-between items-center px-20 text-[4vw] pt-5">
+            <div className="border-t-[1px] border-zinc-300 mt-10 md:mt-20">
+                <div className="flex justify-between items-center px-5 md:px-20 text-[6vw] md:text-[4vw] pt-5">
                     <a href="#"><FaFacebook className="text-blue-600" /></a>
                     <a href="#"><FaInstagram className="text-orange-400" /></a>
                     <a href="#"><FaLinkedin className="text-blue-400" /></a>

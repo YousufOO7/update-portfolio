@@ -1,6 +1,7 @@
 
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Contact from "../Contact/Contact";
 import Marquee from "../Marquee/Marquee";
 import Project from "../Project/Project";
 import Skill from "../Skill/Skill";
@@ -18,6 +19,7 @@ const Home = () => {
            <About />
            <Skill />
            <Project />
+           <Contact />
         </div>
     );
 };

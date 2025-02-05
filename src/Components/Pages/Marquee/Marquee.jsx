@@ -10,13 +10,13 @@ const Marquee = () => {
                 initial={{x: "0"}} 
                 animate={{x: "-100%"}} 
                 transition={{repeat: Infinity, ease: "linear", duration: 10 }} 
-                className="text-[6vw] md:text-[10vw] pl-20 leading-none uppercase pt-10 mb-10 font-semibold">Front End Developer</motion.h1>
+                className="text-[15vw] md:text-[10vw] pl-20 leading-none uppercase pt-10 mb-10 font-semibold">Front End Developer</motion.h1>
 
                 <motion.h1 
                 initial={{x: "0"}} 
                 animate={{x: "-100%"}} 
                 transition={{repeat: Infinity, ease: "linear", duration: 10 }}
-                className="text-[6vw]  md:text-[10vw] pl-20 leading-none uppercase pt-10 mb-10 font-semibold"
+                className="text-[15vw]  md:text-[10vw] pl-20 leading-none uppercase pt-10 mb-10 font-semibold"
                 >Front End Developer</motion.h1>
             </div>
         </div>
