@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div id="about" className="bg-[#CDEA68] text-black -mt-14 rounded-t-2xl">
+        <div data-scroll data-scroll-speed=".1" id="about" className="bg-[#CDEA68] text-black -mt-14 rounded-t-2xl">
             <div className="hero md:px-20 pt-10">
                 <div className="hero-content flex-col lg:flex-row w-full">
                     <div className="lg:w-1/2 mr-5">

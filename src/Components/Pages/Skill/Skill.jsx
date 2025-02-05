@@ -1,0 +1,71 @@
+import { FaGlobe, FaWindows } from "react-icons/fa";
+
+const Skill = () => {
+  return (
+    <div  className="py-10 w-full">
+      <h2 className="text-5xl font-bold text-center my-5">Professional Skills</h2>
+      <div className="border-t-[1px] border-zinc-300 my-5"></div>
+      <div className="px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <h2 className="text-4xl font-bold uppercase mb-3 underline">Frontend</h2>
+          <p className="font-semibold">HTML 5</p>
+          <p className="font-semibold">CSS 3</p>
+          <p className="font-semibold">JavaScript</p>
+          <p className="font-semibold">React.js</p>
+          <p className="font-semibold">React router dom</p>
+          <p className="font-semibold">TailwindCSS</p>
+          <p className="font-semibold">ShadCN/UI</p>
+          <p className="font-semibold">Next.Js</p>
+        </div>
+        <div>
+          <h2 className="text-4xl font-bold uppercase mb-3 underline">Backend</h2>
+          <p className="font-semibold">Express.Js</p>
+          <p className="font-semibold">Node.Js</p>
+          <p className="font-semibold">Rest APIs</p>
+          <p className="font-semibold">JWT</p>
+        </div>
+        <div>
+          <h2 className="text-4xl font-bold uppercase mb-3 underline">Database</h2>
+          <p className="font-semibold">MongoDB</p>
+        </div>
+        <div>
+          <h2 className="text-4xl font-bold uppercase mb-3 underline">Tools</h2>
+          <p className="font-semibold">GitHub</p>
+          <p className="font-semibold">Firebase</p>
+          <p className="font-semibold">Kinde</p>
+        </div>
+      </div>
+
+      <div 
+      className="w-full h-[30vw] bg-fixed bg-cover"  
+      style={{
+        backgroundImage: "url('https://st.depositphotos.com/1907633/2379/i/450/depositphotos_23796733-stock-photo-businessman-working-with-a-cloud.jpg')"
+      }}>
+        <h2 className="text-5xl font-bold text-center my-10 text-white pt-10">Specialized In</h2>
+        <div className="px-20 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="card bg-base-100 shadow-xl p-6 text-center border">
+            <div className="flex justify-center">
+              <FaGlobe className="text-gray-500 w-10 h-10" />
+            </div>
+            <h2 className="text-xl font-semibold mt-3">Web Development</h2>
+            <p className="text-gray-500 mt-2">
+              Create and maintain websites and also boost their performance and traffic capacity.
+            </p>
+          </div>
+
+          <div className="card bg-base-100 shadow-xl p-6 text-center border">
+            <div className="flex justify-center">
+              <FaWindows className="text-gray-500 w-10 h-10" />
+            </div>
+            <h2 className="text-xl font-semibold mt-3">Web Application</h2>
+            <p className="text-gray-500 mt-2">
+              Standard designing, building, and implementing your applications with documentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Skill;
