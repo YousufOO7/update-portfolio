@@ -1,0 +1,26 @@
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+
+
+const Banner = () => {
+    return (
+        <div className="w-full pt-1 h-screen bg-[#F1F1F1]">
+            <div className="mt-28 px-20">
+                {["I Create", "Responsive", "Website"].map((item, idx) => {
+                    return <div key={idx}>
+                    <h1 className="text-[8vw] leading-none font-bold uppercase tracking-tighter">{item}</h1>
+                </div>
+                })}
+            </div>
+
+            <div className="border-t-[1px] border-zinc-300 mt-20">
+                <div className="flex justify-between items-center px-20 text-[4vw] pt-5">
+                    <a href="#"><FaFacebook className="text-blue-600" /></a>
+                    <a href="#"><FaInstagram className="text-orange-400" /></a>
+                    <a href="#"><FaLinkedin className="text-blue-400" /></a>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Banner;
