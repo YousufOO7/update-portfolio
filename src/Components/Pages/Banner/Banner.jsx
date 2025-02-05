@@ -7,8 +7,11 @@ const Banner = () => {
             <div className="mt-28 px-20">
                 {["I Create", "Responsive", "Website"].map((item, idx) => {
                     return <div key={idx}>
-                    <h1 className="text-[8vw] leading-none font-bold uppercase tracking-tighter">{item}</h1>
-                </div>
+                        <div className="w-fit flex items-center overflow-hidden">
+                            {idx === 1 && (<div className="w-[8vw] h-[5.5vw] relative rounded-md top-[0.6vw] bg-red-500"></div>)}
+                            <h1 className="text-[8vw] leading-none font-bold uppercase tracking-tighter">{item}</h1>
+                        </div>
+                    </div>
                 })}
             </div>
 
