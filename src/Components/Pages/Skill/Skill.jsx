@@ -2,12 +2,12 @@ import { FaGlobe, FaWindows } from "react-icons/fa";
 
 const Skill = () => {
   return (
-    <div  className="py-10 w-full">
+    <div id="skill" className="py-10 w-full">
       <h2 className="text-4xl md:text-5xl px-5 md:px-0 font-bold text-center my-5">Professional Skills</h2>
       <div className="border-t-[1px] border-zinc-300 my-5"></div>
       <div className="px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h2 className="text-2xl md:text-4xl font-bold uppercase mb-3 underline">Frontend</h2>
+          <h2 className="text-2xl md:text-4xl font-bold uppercase my-3 underline">Frontend</h2>
           <p className="text-sm md:text-lg font-semibold">HTML 5</p>
           <p className="text-sm md:text-lg font-semibold">CSS 3</p>
           <p className="text-sm md:text-lg font-semibold">JavaScript</p>

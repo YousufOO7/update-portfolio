@@ -5,11 +5,11 @@ import room from '../../../assets/images/room-booking.png'
 
 const Project = () => {
     return (
-        <div className="w-full bg-[#F1F1F1]">
-            <h2 className="text-[7vw] md:text-[4vw] font-bold py-20 px-5 md:px-20">Featured Project</h2>
+        <div id='project' className="w-full bg-[#F1F1F1]">
+            <h2 className="text-[7vw] md:text-[4vw] font-bold pt-5 lg:py-10 px-5 md:px-20">Featured Project</h2>
             <div className="border-t-[1px] border-zinc-300 my-5"></div>
 
-            <div  className="w-full py-10">
+            <div  className="w-full lg:py-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 w-full  px-5 md:px-20 gap-10">
                     {/* first */}
                     <div className="h-[60vw] md:h-[32vw] overflow-hidden rounded-xl transition-all duration-700 hover:scale-105">
