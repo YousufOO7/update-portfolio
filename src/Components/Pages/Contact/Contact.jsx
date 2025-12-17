@@ -45,14 +45,14 @@ const Contact = () => {
     };
 
     return (
-        <div data-scroll data-scroll-section data-scroll-speed=".1" id="contact" className="bg-[#f8eaea] py-20">
+        <div data-scroll data-scroll-section data-scroll-speed=".1" id="contact" className="bg-[#F1F1F1] py-20">
         <div className="max-w-7xl mx-auto px-6 border py-3 border-gray-700 rounded-lg shadow-md">
-            <h2   className="text-3xl font-bold text-center mb-6">Contact Me</h2>
+            <h2   className="text-3xl lg:text-5xl font-bold text-center mb-6">Contact Me</h2>
 
             <div className="flex flex-col gap-6">
                 {/* Email Section */}
                 <div className="flex items-center gap-4">
-                    <FaEnvelope className="text-xl text-primary" />
+                    <FaEnvelope className="text-xl" />
                     <a
                         href="mailto:yousufjobaer@gmail.com"
                         className="text-lg hover:underline"
@@ -63,7 +63,7 @@ const Contact = () => {
 
                 {/* Phone Section */}
                 <div className="flex items-center gap-4">
-                    <FaPhone className="text-xl text-primary" />
+                    <FaPhone className="text-xl" />
                     <a href="tel:+881837308476" className="text-lg hover:underline">
                         +88 01837308476
                     </a>
@@ -71,7 +71,7 @@ const Contact = () => {
 
                 {/* WhatsApp Section */}
                 <div className="flex items-center gap-4">
-                    <FaWhatsapp className="text-xl text-primary" />
+                    <FaWhatsapp className="text-xl" />
                     <a
                         href="https://wa.me/01837308476"
                         target="_blank"
@@ -90,7 +90,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Your Name"
-                        className="input input-bordered input-primary w-full"
+                        className="input w-full"
                         required
                     />
                     <input
@@ -99,7 +99,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="Your Email"
-                        className="input input-bordered input-primary w-full"
+                        className="input w-full"
                         required
                     />
                     <textarea
@@ -107,13 +107,13 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Your Message"
-                        className="textarea textarea-bordered textarea-primary w-full"
+                        className="textarea w-full"
                         rows="4"
                         required
                     ></textarea>
                     <button
                         type="submit"
-                        className="btn w-full bg-[#D3A971]  rounded-full font-bold"
+                        className="btn w-full bg-[#F1F1F1] text-black border-2 rounded-full font-bold"
                     >
                         Send Email
                     </button>

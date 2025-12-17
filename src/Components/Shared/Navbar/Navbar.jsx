@@ -1,19 +1,35 @@
+import { useState } from "react";
 
 
 const Navbar = () => {
 
-    const cvFilePath = "./Resume_for_web.pdf";
+    const cvFilePath = "./Front_Resume.pdf";
+    const [active, setActive] = useState("/");
 
-    const Links = <div className="flex gap-5 items-center">
-        <li><a href="/">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-    </div>
+    const Links =  <ul className="flex gap-5 items-center">
+    {[
+      { name: "Home", href: "/" },
+      { name: "About Me", href: "#about" },
+      { name: "Skills", href: "#skill" },
+      { name: "Projects", href: "#project" },
+      { name: "Contact Me", href: "#contact" },
+    ].map((link) => (
+      <li key={link.href}>
+        <a
+          href={link.href}
+          onClick={() => setActive(link.href)}
+          className={`relative pb-1 transition-all duration-700 ${
+            active === link.href ? "border-b-2 border-black" : "hover:border-b-2 hover:border-black"
+          }`}
+        >
+          {link.name}
+        </a>
+      </li>
+    ))}
+  </ul>
 
     return (
-        <div className=" navbar border-b-[1px] border-zinc-200 bg-[#ffffff99] px-20 bg-opacity-60 fixed z-[999]">
+        <div className=" navbar border-b-[1px] border-zinc-200 backdrop-blur-sm px-5 md:px-20  fixed z-[999]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,8 +55,8 @@ const Navbar = () => {
             <div className="navbar-end">
                 <a 
                 href={cvFilePath}
-                download="./Resume_for_web.pdf"
-                className="btn hover:bg-black hover:text-white">Download Resume</a>
+                download="./Front_Resume.pdf"
+                className="btn hover:bg-black hover:text-white transition duration-2000 ease-in-out">Download Resume</a>
             </div>
         </div>
     );

@@ -13,7 +13,7 @@ const Home = () => {
     const locomotiveScroll = new LocomotiveScroll();
 
     return (
-        <div>
+        <div className="bg-[#F1F1F1]">
            <Banner />
            <Marquee />
            <About />

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Marquee = () => {
     return (
-        <div data-scroll data-scroll-section data-scroll-speed=".1" className="w-full py-20  text-white px-5 bg-[#004D43] rounded-t-xl">
+        <div data-scroll data-scroll-section data-scroll-speed=".1" className="w-full py-20  text-black px-5 bg-[#F1F1F1] rounded-t-xl">
             <div className="border-t-2 border-b-2 border-zinc-300 flex overflow-hidden whitespace-nowrap">
 
                 <motion.h1 
