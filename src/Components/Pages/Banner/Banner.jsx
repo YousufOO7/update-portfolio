@@ -27,7 +27,7 @@ const Banner = () => {
                     <a href="https://www.facebook.com/Mdyousufjobaer">
                     <FaFacebook className="text-blue-600" /></a>
                     <a href="https://www.instagram.com/yousuf_jobaer_/"><FaInstagram className="text-orange-400" /></a>
-                    <a href="https://www.linkedin.com/in/yousuf-jobaer/"><FaLinkedin className="text-blue-400" /></a>
+                    <a href="https://www.linkedin.com/in/yousuf-shihab/"><FaLinkedin className="text-blue-400" /></a>
                 </div>
             </div>
         </div>
